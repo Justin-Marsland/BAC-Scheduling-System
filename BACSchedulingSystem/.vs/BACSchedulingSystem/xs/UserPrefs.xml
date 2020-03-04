@@ -1,16 +1,25 @@
 ﻿<Properties StartupConfiguration="{2E8FBE25-93CA-41F4-A4F3-7FA5145A366C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BACSchedulingSystem/Controllers/BinaryTree.txt">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BACSchedulingSystem/appsettings.json">
     <Files>
-      <File FileName="BACSchedulingSystem/Controllers/BinaryTree.txt" Line="1" Column="1" />
+      <File FileName="BACSchedulingSystem/Controllers/BinaryTree.txt" Line="6" Column="6" />
+      <File FileName="BACSchedulingSystem/Controllers/HelloWorldController.cs" Line="21" Column="38" />
+      <File FileName="BACSchedulingSystem/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="BACSchedulingSystem/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="BACSchedulingSystem/appsettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BACSchedulingSystem" expanded="True">
             <Node name="BACSchedulingSystem" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="BinaryTree.txt" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
               </Node>
+              <Node name="wwwroot" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>

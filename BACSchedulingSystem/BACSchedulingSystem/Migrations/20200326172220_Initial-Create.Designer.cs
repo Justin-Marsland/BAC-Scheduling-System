@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BACSchedulingSystem.Migrations
 {
-    [DbContext(typeof(BACContext))]
-    [Migration("20200304203233_InitialCreate")]
+    [DbContext(typeof(BACSchedulingSystemContext))]
+    [Migration("20200326172220_Initial-Create")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

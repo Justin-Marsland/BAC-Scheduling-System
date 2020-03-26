@@ -20,9 +20,34 @@ namespace BACSchedulingSystem.Controllers
         }
 
         // GET: Ingredients
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string ingredientTypeSearch, string searchString)
         {
-            return View(await _context.Ingredient.ToListAsync());
+            // Use LINQ to get list of types.
+            IQueryable<IngredientType> ingredientQuery = from m in _context.Ingredient
+                                            orderby m.type
+                                            select m.type;
+
+            var ingredients = from m in _context.Ingredient
+                         select m;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                ingredients = ingredients.Where(s => s.name.Contains(searchString));
+            }
+
+            if (!string.IsNullOrEmpty(ingredientTypeSearch))
+            {
+                IngredientType ingredientType = strToIngredientType(ingredientTypeSearch);
+                ingredients = ingredients.Where(x => x.type == ingredientType);
+            }
+
+            var ingredientTypeVM = new IngredientTypeViewModel
+            {
+                types = new SelectList(await ingredientQuery.Distinct().ToListAsync()),
+                Ingredients = await ingredients.ToListAsync()
+            };
+
+            return View(ingredientTypeVM);
         }
 
         // GET: Ingredients/Details/5
@@ -148,6 +173,26 @@ namespace BACSchedulingSystem.Controllers
         private bool IngredientExists(string id)
         {
             return _context.Ingredient.Any(e => e.name == id);
+        }
+
+        public IngredientType strToIngredientType(string typeString)
+        {
+            IngredientType type;
+            if (typeString == "Fruit")
+                type = IngredientType.Fruit;
+            else if (typeString == "Grain")
+                type = IngredientType.Grain;
+            else if (typeString == "Meat")
+                type = IngredientType.Meat;
+            else if (typeString == "Spice")
+                type = IngredientType.Spice;
+            else if (typeString == "Vegetable")
+                type = IngredientType.Vegetable;
+            else
+            {
+                type = IngredientType.NULL;
+            }
+            return type;
         }
     }
 }

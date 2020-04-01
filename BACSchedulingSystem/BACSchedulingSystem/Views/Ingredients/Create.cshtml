@@ -19,7 +19,13 @@
             </div>
             <div class="form-group">
                 <label asp-for="type" class="control-label"></label>
-                <select asp-for="type" class="form-control"></select>
+                <select asp-for="type" class="form-control">
+                    @foreach (string type in Enum.GetNames(typeof(IngredientType)))
+                    {
+	                    // do the thing
+	                    <option>@type</option>
+                    }
+                </select>
                 <span asp-validation-for="type" class="text-danger"></span>
             </div>
             <div class="form-group">

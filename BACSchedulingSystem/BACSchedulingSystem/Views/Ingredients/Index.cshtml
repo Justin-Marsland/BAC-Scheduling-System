@@ -25,7 +25,7 @@
         -->
 
         <div class="form-group">
-                <select id="value" name="type">
+                <select asp-for="ingredientType" id="=value" name="type">
                     <option>All</option>
                     @foreach (string type in Enum.GetNames(typeof(IngredientType)))
                     {
@@ -33,7 +33,7 @@
 	                    <option>@type</option>
                     }
                 </select>
-         </div
+         </div>
 
         Ingredient Name: <input type="text" asp-for="SearchString" />
         <input type="submit" value="Filter" />

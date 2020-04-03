@@ -11,8 +11,7 @@ namespace BACSchedulingSystem.Models
         Fruit,
         Vegetable,
         Grain,
-        Spice,
-        NULL
+        Spice
     }
     public enum Location
     {

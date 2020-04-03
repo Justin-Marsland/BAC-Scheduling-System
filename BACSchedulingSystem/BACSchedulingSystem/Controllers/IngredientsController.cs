@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -32,12 +33,14 @@ namespace BACSchedulingSystem.Controllers
 
             if (!string.IsNullOrEmpty(searchString))
             {
+                Debug.WriteLine("searchString = ", searchString);
                 ingredients = ingredients.Where(s => s.name.Contains(searchString));
             }
 
             if (!string.IsNullOrEmpty(ingredientTypeSearch))
             {
                 IngredientType ingredientType = strToIngredientType(ingredientTypeSearch);
+                Debug.WriteLine("ingredientType = ", ingredientType);
                 ingredients = ingredients.Where(x => x.type == ingredientType);
             }
 
@@ -186,12 +189,8 @@ namespace BACSchedulingSystem.Controllers
                 type = IngredientType.Meat;
             else if (typeString == "Spice")
                 type = IngredientType.Spice;
-            else if (typeString == "Vegetable")
-                type = IngredientType.Vegetable;
             else
-            {
-                type = IngredientType.NULL;
-            }
+                type = IngredientType.Vegetable;
             return type;
         }
     }

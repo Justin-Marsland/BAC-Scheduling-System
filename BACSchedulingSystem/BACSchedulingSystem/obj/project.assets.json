@@ -8482,23 +8482,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TheSh\\.nuget\\packages\\": {},
+    "C:\\Users\\Tite divava\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TheSh\\source\\repos\\Justin-Marsland\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\BACSchedulingSystem.csproj",
+      "projectUniqueName": "C:\\Users\\Tite divava\\Documents\\GitHub\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\BACSchedulingSystem.csproj",
       "projectName": "BACSchedulingSystem",
-      "projectPath": "C:\\Users\\TheSh\\source\\repos\\Justin-Marsland\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\BACSchedulingSystem.csproj",
-      "packagesPath": "C:\\Users\\TheSh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TheSh\\source\\repos\\Justin-Marsland\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\obj\\",
+      "projectPath": "C:\\Users\\Tite divava\\Documents\\GitHub\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\BACSchedulingSystem.csproj",
+      "packagesPath": "C:\\Users\\Tite divava\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tite divava\\Documents\\GitHub\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\TheSh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tite divava\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8562,7 +8562,15 @@
           },
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.0.2, 3.0.2]"
+            "version": "[3.0.3, 3.0.3]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
           }
         ],
         "frameworkReferences": {
@@ -8573,7 +8581,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using BACSchedulingSystem.Data;
 using System;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace BACSchedulingSystem.Models
 {
@@ -14,16 +15,18 @@ namespace BACSchedulingSystem.Models
                 serviceProvider.GetRequiredService<
                     DbContextOptions<BACSchedulingSystemContext>>()))
             {
-                // Look for any movies.
+
+                // Look for any ingredients.
                 if (context.Ingredient.Any())
                 {
-                    return;   // DB has been seeded
+                    // DB has been seeded
                 }
-
-                context.Ingredient.AddRange(
+                else
+                {
+                    context.Ingredient.AddRange(
                     new Ingredient
                     {
-                        name = "Ham",
+                        name = "Hamburger",
                         type = IngredientType.Meat,
                         expDate = DateTime.Parse("04/15/2020"),
                         vendor = "Harry's Butcher Shop",
@@ -43,7 +46,7 @@ namespace BACSchedulingSystem.Models
 
                     new Ingredient
                     {
-                        name = "Rice",
+                        name = "Gluten Free Hamburger Bun",
                         type = IngredientType.Grain,
                         expDate = DateTime.Parse("08/25/2020"),
                         vendor = "Walmart",
@@ -59,8 +62,48 @@ namespace BACSchedulingSystem.Models
                         vendor = "Erdman's Grocery Store",
                         amount = 22,
                         cost = .99m
+                    },
+
+                    new Ingredient
+                    {
+                        name = "Lettuce",
+                        type = IngredientType.Vegetable,
+                        expDate = DateTime.Parse("05/20/2025"),
+                        vendor = "Erdman's Grocery Store",
+                        amount = 40,
+                        cost = .75m
                     }
                 );
+                }
+                //look for any recipes
+                if (context.Recipe.Any())
+                {
+                    //database is seeded
+                }
+                else
+                {
+                    context.Recipe.AddRange(
+                        new Recipe
+                        {
+                            name = "Hamburger",
+                            ingredientList = new List<Ingredient>(),
+                            cookingInstructions = "Grill burger, then put it between the gluten free hamburger buns.",
+                            glutenFree = true,
+                            vegetarian = false,
+                            vegan = false
+                        },
+
+                        new Recipe
+                        {
+                            name = "Salad",
+                            ingredientList = null,
+                            cookingInstructions = "Mix all ingredients together in large salad bowl",
+                            glutenFree = true,
+                            vegetarian = true,
+                            vegan = true
+                        }
+                        );
+                    }
                 context.SaveChanges();
             }
         }

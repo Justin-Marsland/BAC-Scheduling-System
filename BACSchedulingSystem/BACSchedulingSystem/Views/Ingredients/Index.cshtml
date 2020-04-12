@@ -12,20 +12,9 @@
 </p>
 <form asp-controller="Ingredients" asp-action="Index" method="get">
 
-    <div> <!-- delta from p to div -->
-        <!--
-        <select id="value" name="type">
-            <option value="">All</option>
-            <option value="Fruit">Fruit</option>
-            <option value="Grain">Grain</option>
-            <option value="Meat">Meat</option>
-            <option value="Spice">Spice</option>
-            <option value="Vegetable">Vegetable</option>
-        </select>
-        -->
-
+    <div> 
         <div class="form-group">
-                <select asp-for="ingredientType" id="=value" name="type">
+                <select asp-for="ingredientType">
                     <option>All</option>
                     @foreach (string type in Enum.GetNames(typeof(IngredientType)))
                     {

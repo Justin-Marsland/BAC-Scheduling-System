@@ -373,3 +373,8 @@ C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSch
 C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\BACSchedulingSystem.csproj.CopyComplete
 C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\BACSchedulingSystem.dll
 C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\BACSchedulingSystem.pdb
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Recipes\Create.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Recipes\Delete.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Recipes\Details.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Recipes\Edit.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Recipes\Index.cshtml.g.cs

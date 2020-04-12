@@ -33,7 +33,6 @@ namespace BACSchedulingSystem.Controllers
 
             if (!string.IsNullOrEmpty(searchString))
             {
-                Debug.WriteLine("searchString = ", searchString);
                 ingredients = ingredients.Where(s => s.name.Contains(searchString));
             }
 

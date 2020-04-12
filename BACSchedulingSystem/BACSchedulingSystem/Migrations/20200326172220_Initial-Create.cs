@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
+using System.Collections.Generic;
 
 namespace BACSchedulingSystem.Migrations
 {
@@ -22,12 +23,28 @@ namespace BACSchedulingSystem.Migrations
                 {
                     table.PrimaryKey("PK_Ingredient", x => x.name);
                 });
+            migrationBuilder.CreateTable(
+                name: "Recipe",
+                columns: table => new
+                {
+                    name = table.Column<string>(nullable: false),
+                    ingredientList = table.Column<List<BACSchedulingSystem.Models.Ingredient>>(nullable: false),
+                    cookingInstruction = table.Column<string>(nullable: false),
+                    peopleFed = table.Column<int>(nullable: true),
+                    glutenFree = table.Column<bool>(nullable: false),
+                    vegetarian = table.Column<bool>(nullable: false),
+                    vegan = table.Column<bool>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Recipe", x => x.name);
+                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Ingredient");
+                name: "Recipe");
         }
     }
 }

@@ -13,28 +13,28 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="name" class="control-label"></label>
-                <input asp-for="name" class="form-control" />
-                <span asp-validation-for="name" class="text-danger"></span>
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="cookingInstructions" class="control-label"></label>
-                <input asp-for="cookingInstructions" class="form-control" />
-                <span asp-validation-for="cookingInstructions" class="text-danger"></span>
+                <label asp-for="CookingInstructions" class="control-label"></label>
+                <input asp-for="CookingInstructions" class="form-control" />
+                <span asp-validation-for="CookingInstructions" class="text-danger"></span>
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="glutenFree" /> @Html.DisplayNameFor(model => model.glutenFree)
+                    <input class="form-check-input" asp-for="GlutenFree" /> @Html.DisplayNameFor(model => model.GlutenFree)
                 </label>
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="vegetarian" /> @Html.DisplayNameFor(model => model.vegetarian)
+                    <input class="form-check-input" asp-for="Vegetarian" /> @Html.DisplayNameFor(model => model.Vegetarian)
                 </label>
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="vegan" /> @Html.DisplayNameFor(model => model.vegan)
+                    <input class="form-check-input" asp-for="Vegan" /> @Html.DisplayNameFor(model => model.Vegan)
                 </label>
             </div>
             <div class="form-group">

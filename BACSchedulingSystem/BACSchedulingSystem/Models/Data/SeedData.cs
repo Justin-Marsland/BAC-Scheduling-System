@@ -85,22 +85,24 @@ namespace BACSchedulingSystem.Models
                     context.Recipe.AddRange(
                         new Recipe
                         {
-                            name = "Hamburger",
-                            ingredientList = new List<Ingredient>(),
-                            cookingInstructions = "Grill burger, then put it between the gluten free hamburger buns.",
-                            glutenFree = true,
-                            vegetarian = false,
-                            vegan = false
+                            Name = "Hamburger",
+                            IngredientList = new List<Ingredient>(),
+                            CookingInstructions = "Grill burger, then put it between the gluten free hamburger buns.",
+                            GlutenFree = true,
+                            Vegetarian = false,
+                            Vegan = false,
+                            Active = true
                         },
 
                         new Recipe
                         {
-                            name = "Salad",
-                            ingredientList = null,
-                            cookingInstructions = "Mix all ingredients together in large salad bowl",
-                            glutenFree = true,
-                            vegetarian = true,
-                            vegan = true
+                            Name = "Salad",
+                            IngredientList = null,
+                            CookingInstructions = "Mix all ingredients together in large salad bowl",
+                            GlutenFree = true,
+                            Vegetarian = true,
+                            Vegan = true,
+                            Active = true
                         }
                         );
                     }

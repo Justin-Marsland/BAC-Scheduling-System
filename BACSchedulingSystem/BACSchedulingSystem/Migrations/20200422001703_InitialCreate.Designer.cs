@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BACSchedulingSystem.Migrations
 {
     [DbContext(typeof(BACSchedulingSystemContext))]
-    [Migration("20200326172220_Initial-Create")]
+    [Migration("20200422001703_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,11 +26,14 @@ namespace BACSchedulingSystem.Migrations
                     b.Property<string>("name")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("RecipeName")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<short>("amount")
                         .HasColumnType("smallint");
 
                     b.Property<decimal>("cost")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(18, 2)");
 
                     b.Property<DateTime>("expDate")
                         .HasColumnType("datetime2");
@@ -43,7 +46,38 @@ namespace BACSchedulingSystem.Migrations
 
                     b.HasKey("name");
 
+                    b.HasIndex("RecipeName");
+
                     b.ToTable("Ingredient");
+                });
+
+            modelBuilder.Entity("BACSchedulingSystem.Models.Recipe", b =>
+                {
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CookingInstructions")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("GlutenFree")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Vegan")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Vegetarian")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Name");
+
+                    b.ToTable("Recipe");
+                });
+
+            modelBuilder.Entity("BACSchedulingSystem.Models.Ingredient", b =>
+                {
+                    b.HasOne("BACSchedulingSystem.Models.Recipe", null)
+                        .WithMany("IngredientList")
+                        .HasForeignKey("RecipeName");
                 });
 #pragma warning restore 612, 618
         }

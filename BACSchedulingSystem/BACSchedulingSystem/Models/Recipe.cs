@@ -9,16 +9,20 @@ namespace BACSchedulingSystem.Models
     public class Recipe
     {
         [Key]
-        public string name { get; set; }
+        public string Name { get; set; }
 
-        public List<Ingredient> ingredientList { get; set; }
+        public List<Ingredient> IngredientList { get; set; }
 
-        public string cookingInstructions { get; set; }
+        [Display(Name = "Cooking Instructions")]
+        public string CookingInstructions { get; set; }
 
-        public bool glutenFree { get; set; }
+        [Display(Name = "Gluten Free")]
+        public bool GlutenFree { get; set; }
 
-        public bool vegetarian { get; set; }
+        public bool Vegetarian { get; set; }
 
-        public bool vegan { get; set; }
+        public bool Vegan { get; set; }
+
+        public bool Active { get; set; }
     }
 }

@@ -34,7 +34,7 @@ namespace BACSchedulingSystem.Controllers
             }
 
             var recipe = await _context.Recipe
-                .FirstOrDefaultAsync(m => m.name == id);
+                .FirstOrDefaultAsync(m => m.Name == id);
             if (recipe == null)
             {
                 return NotFound();
@@ -86,9 +86,9 @@ namespace BACSchedulingSystem.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("name,cookingInstructions,peopleFed,glutenFree,vegetarian,vegan")] Recipe recipe)
+        public async Task<IActionResult> Edit(string id, [Bind("Name,CookingInstructions,GlutenFree,Vegetarian,Vegan")] Recipe recipe)
         {
-            if (id != recipe.name)
+            if (id != recipe.Name)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace BACSchedulingSystem.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!RecipeExists(recipe.name))
+                    if (!RecipeExists(recipe.Name))
                     {
                         return NotFound();
                     }
@@ -125,7 +125,7 @@ namespace BACSchedulingSystem.Controllers
             }
 
             var recipe = await _context.Recipe
-                .FirstOrDefaultAsync(m => m.name == id);
+                .FirstOrDefaultAsync(m => m.Name == id);
             if (recipe == null)
             {
                 return NotFound();
@@ -147,7 +147,7 @@ namespace BACSchedulingSystem.Controllers
 
         private bool RecipeExists(string id)
         {
-            return _context.Recipe.Any(e => e.name == id);
+            return _context.Recipe.Any(e => e.Name == id);
         }
     }
 }

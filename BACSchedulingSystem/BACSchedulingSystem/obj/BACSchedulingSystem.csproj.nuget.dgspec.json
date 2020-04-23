@@ -1,28 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/taylorlauters/Documents/GitHub/BAC-Scheduling-System/BACSchedulingSystem/BACSchedulingSystem/BACSchedulingSystem.csproj": {}
+    "C:\\Users\\TheSh\\Documents\\GitHub\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\BACSchedulingSystem.csproj": {}
   },
   "projects": {
-    "/Users/taylorlauters/Documents/GitHub/BAC-Scheduling-System/BACSchedulingSystem/BACSchedulingSystem/BACSchedulingSystem.csproj": {
+    "C:\\Users\\TheSh\\Documents\\GitHub\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\BACSchedulingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/taylorlauters/Documents/GitHub/BAC-Scheduling-System/BACSchedulingSystem/BACSchedulingSystem/BACSchedulingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\TheSh\\Documents\\GitHub\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\BACSchedulingSystem.csproj",
         "projectName": "BACSchedulingSystem",
-        "projectPath": "/Users/taylorlauters/Documents/GitHub/BAC-Scheduling-System/BACSchedulingSystem/BACSchedulingSystem/BACSchedulingSystem.csproj",
-        "packagesPath": "/Users/taylorlauters/.nuget/packages/",
-        "outputPath": "/Users/taylorlauters/Documents/GitHub/BAC-Scheduling-System/BACSchedulingSystem/BACSchedulingSystem/obj/",
+        "projectPath": "C:\\Users\\TheSh\\Documents\\GitHub\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\BACSchedulingSystem.csproj",
+        "packagesPath": "C:\\Users\\TheSh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TheSh\\Documents\\GitHub\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/taylorlauters/.config/NuGet/NuGet.Config"
+          "C:\\Users\\TheSh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -76,6 +78,10 @@
             {
               "name": "Microsoft.AspNetCore.App.Ref",
               "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.2, 3.0.2]"
             }
           ],
           "frameworkReferences": {
@@ -86,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

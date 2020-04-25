@@ -8,8 +8,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BACSchedulingSystem.Migrations
 {
-    [DbContext(typeof(BACContext))]
-    partial class BACContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(BACSchedulingSystemContext))]
+    partial class BACSchedulingSystemContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -53,6 +53,9 @@ namespace BACSchedulingSystem.Migrations
                 {
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(450)");
+
+                    b.Property<bool>("Active")
+                        .HasColumnType("bit");
 
                     b.Property<string>("CookingInstructions")
                         .HasColumnType("nvarchar(max)");

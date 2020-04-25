@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TheSh\\source\\repos\\Justin-Marsland\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\BACSchedulingSystem.csproj": {}
+    "C:\\Users\\TheSh\\Documents\\GitHub\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\BACSchedulingSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TheSh\\source\\repos\\Justin-Marsland\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\BACSchedulingSystem.csproj": {
+    "C:\\Users\\TheSh\\Documents\\GitHub\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\BACSchedulingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TheSh\\source\\repos\\Justin-Marsland\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\BACSchedulingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\TheSh\\Documents\\GitHub\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\BACSchedulingSystem.csproj",
         "projectName": "BACSchedulingSystem",
-        "projectPath": "C:\\Users\\TheSh\\source\\repos\\Justin-Marsland\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\BACSchedulingSystem.csproj",
+        "projectPath": "C:\\Users\\TheSh\\Documents\\GitHub\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\BACSchedulingSystem.csproj",
         "packagesPath": "C:\\Users\\TheSh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TheSh\\source\\repos\\Justin-Marsland\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\obj\\",
+        "outputPath": "C:\\Users\\TheSh\\Documents\\GitHub\\BAC-Scheduling-System\\BACSchedulingSystem\\BACSchedulingSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

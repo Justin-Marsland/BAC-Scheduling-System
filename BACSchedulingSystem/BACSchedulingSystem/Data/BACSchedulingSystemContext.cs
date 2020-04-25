@@ -15,5 +15,7 @@ namespace BACSchedulingSystem.Data
         }
 
         public DbSet<BACSchedulingSystem.Models.Ingredient> Ingredient { get; set; }
+
+        public DbSet<BACSchedulingSystem.Models.Equipment> Equipment { get; set; }
     }
 }

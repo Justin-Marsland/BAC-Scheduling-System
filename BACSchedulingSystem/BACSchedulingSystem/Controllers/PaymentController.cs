@@ -33,6 +33,12 @@ namespace BACSchedulingSystem.Controllers
             return View(card);//CardData);
         }
 
+        public IActionResult ConfirmCard(CardData data)
+        {
+            return View(data);
+        }
+
+
         //acion method to validate credit card
         // is  onyl called to verify credit card
         [AcceptVerbs("GET", "POST")]

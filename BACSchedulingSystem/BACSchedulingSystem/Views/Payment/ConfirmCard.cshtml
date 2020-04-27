@@ -1,0 +1,78 @@
+﻿@model BACSchedulingSystem.Models.CardData
+
+@{
+    ViewData["Title"] = "ConfirmCard";
+}
+
+<h1>ConfirmCard</h1>
+
+<div>
+    <h4>CardData</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.firstname)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.firstname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.lastname)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.lastname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.cardnumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.cardnumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.cvv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.cvv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.month)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.month)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.year)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.year)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.address)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.address)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.city)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.city)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.state)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.state)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.zipcode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.zipcode)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("ConfirmCard", "ConfirmCard", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

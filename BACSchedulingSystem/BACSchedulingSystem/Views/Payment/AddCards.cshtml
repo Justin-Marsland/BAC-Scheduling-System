@@ -17,6 +17,9 @@
                 <input asp-for="firstname" class="form-control" />
                 <span asp-validation-for="firstname" class="text-danger"></span>
             </div>
+            <div>
+                <asp:DropDownList asp-for="month"></asp:DropDownList>
+            </div>
             <div class="form-group">
                 <label asp-for="lastname" class="control-label"></label>
                 <input asp-for="lastname" class="form-control" />
@@ -33,9 +36,26 @@
                 <span asp-validation-for="cvv" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="expDate" class="control-label"></label>
-                <input asp-for="expDate" class="form-control" />
-                <span asp-validation-for="expDate" class="text-danger"></span>
+                <label asp-for="month" class="control-label"></label>
+                <select asp-for="month" class="form-control" asp-items="@Html.GetEnumSelectList<Months>()"></select>
+                <span asp-validation-for="month" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="year" class="control-label"></label>
+                <select asp-for="year" class="form-control">
+                    <option selected="selected" value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+                <span asp-validation-for="year" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="address" class="control-label"></label>
@@ -49,7 +69,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="state" class="control-label"></label>
-                <input asp-for="state" class="form-control" />
+                <select asp-for="state" asp-items="@Html.GetEnumSelectList<States>()" class="form-control">
+                </select>
                 <span asp-validation-for="state" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -58,8 +79,8 @@
                 <span asp-validation-for="zipcode" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <button type="submit">
-                Submit
+                <button type="button" onclick="location.href='@Url.Action("ConfirmCard", "Payment",Model)'">
+                    Submit
                 </button>
             </div>
         </form>

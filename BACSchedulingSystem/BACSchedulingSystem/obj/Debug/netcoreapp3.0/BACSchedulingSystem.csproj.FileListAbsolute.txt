@@ -378,3 +378,4 @@ C:\Users\Tite divava\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\
 C:\Users\Tite divava\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Payment\Index.cshtml.g.cs
 C:\Users\Tite divava\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Payment\AddCard.cshtml.g.cs
 C:\Users\Tite divava\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Payment\AddCards.cshtml.g.cs
+C:\Users\Tite divava\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Payment\ConfirmCard.cshtml.g.cs

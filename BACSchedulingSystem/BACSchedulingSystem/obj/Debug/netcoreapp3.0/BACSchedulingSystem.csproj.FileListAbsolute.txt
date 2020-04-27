@@ -378,3 +378,17 @@ C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSch
 C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Recipes\Details.cshtml.g.cs
 C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Recipes\Edit.cshtml.g.cs
 C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Recipes\Index.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Equipment\Create.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Equipment\Delete.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Equipment\Details.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Equipment\Edit.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Equipment\Index.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Login\Create.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Login\Delete.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Login\Details.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Login\Edit.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Login\Index.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Payment\AddCard.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Payment\AddCards.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Payment\ConfirmCard.cshtml.g.cs
+C:\Users\TheSh\Documents\GitHub\BAC-Scheduling-System\BACSchedulingSystem\BACSchedulingSystem\obj\Debug\netcoreapp3.0\Razor\Views\Payment\Index.cshtml.g.cs

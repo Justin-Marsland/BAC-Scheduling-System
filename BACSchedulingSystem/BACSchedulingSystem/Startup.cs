@@ -22,9 +22,6 @@ namespace BACSchedulingSystem
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<BACContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("BACContext")));
-
             services.AddDbContext<BACSchedulingSystemContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("BACSchedulingSystemContext")));
         }

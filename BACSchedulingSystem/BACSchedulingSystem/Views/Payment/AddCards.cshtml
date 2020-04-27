@@ -4,13 +4,13 @@
     ViewData["Title"] = "AddCards";
 }
 
-<h1>AddCards</h1>
+<h1>Payment Option</h1>
 
-<h4>CardData</h4>
+<h4>Add card</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="AddCards">
+        <form asp-action="AddCards" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="firstname" class="control-label"></label>
@@ -58,7 +58,9 @@
                 <span asp-validation-for="zipcode" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Add Card" class="btn btn-primary" />
+                <button type="submit">
+                Submit
+                </button>
             </div>
         </form>
     </div>

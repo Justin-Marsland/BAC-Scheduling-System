@@ -157,14 +157,7 @@ namespace BACSchedulingSystem.Models
         [Range(000, 9999)]
         [DisplayName("CVV")]
         public int cvv { get; set; }
-
-        //the DisplayFormat attribute is used to explicitly specify the date format
-        //the ApplyFormatInEditMode setting specifies that the formatting should also be applied when the value is displayed in a text box for editing
-        //[DisplayFormat(DataFormatString = "{0:MM/yyyy}", ApplyFormatInEditMode = true)]
-        //[DisplayName("Expiration Date"),
-        //    DisplayFormat(DataFormatString ="{0:MM/yyyy}", ApplyFormatInEditMode =true)]
-        //[DataType(DataType.Date)]
-        //public DateTime expDate { get; set; } 
+ 
         [DisplayName("Month")]
          public int month { get; set; }
         [DisplayName("Year")]

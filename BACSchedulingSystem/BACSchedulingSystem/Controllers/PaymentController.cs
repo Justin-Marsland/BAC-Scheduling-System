@@ -14,31 +14,29 @@ namespace BACSchedulingSystem.Controllers
     {
         public IActionResult Index()
         {
+     
             return View();
         }
-
+        [AcceptVerbs("GET")]
         public IActionResult AddCards()
         {
-            
-            return View();//CardData);
+                return View();//CardData);
         }
-
+        [ActionName("AddCards"), AcceptVerbs("POST")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult AddCards([Bind("firstname","lastname","cardnumber","cvv", "expDate", "address", "city", "state", "zipcode")]CardData card)
+         public IActionResult AddCards([Bind("firstname","lastname","cardnumber","cvv", "month", "year", "address", "city", "state", "zipcode")]CardData card)
         {
             if (ModelState.IsValid)
                 return RedirectToAction(nameof(Index));
 
             return View(card);//CardData);
         }
-
+        [HttpGet]
         public IActionResult ConfirmCard(CardData data)
         {
             return View(data);
         }
-
-
         //acion method to validate credit card
         // is  onyl called to verify credit card
         [AcceptVerbs("GET", "POST")]
@@ -52,7 +50,6 @@ namespace BACSchedulingSystem.Controllers
             else
                 return Json(true);
         }
-
         private static bool CheckValidCardNumber(string cardnumber)
         {
             try
@@ -117,7 +114,6 @@ namespace BACSchedulingSystem.Controllers
             {
                 return false;
             }
-
         }
     }
 }
